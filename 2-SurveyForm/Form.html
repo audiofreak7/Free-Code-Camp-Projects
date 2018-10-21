@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+</head>
+<body class="container">
+    <h1 id="title">Survey Form</h1>
+    <div class="container rounded offWhiteColor">
+        <p id="description">Let us know how we can improve Borscht.net!</p>
+        <form id="survey-form" method="GET" action="">
+            <div class="row">
+                <div class="col left"><label for="name">*Name:</label></div>
+                <div id="name-label" class="col"><input id="name" type="text" name="name" placeholder="First Lastname" required></div>
+            </div>
+            
+            <div class="row">
+                <div class="col left"><label for="email">*Email:</label></div>
+                <div id="email-label" class="col"><input id="email" type="email" name="email" placeholder="name@example.com" required></div>
+            </div>
+            
+            <div class="row">
+                <div class="col left"><label for="number">*Age (8+):</label></div>
+                <div id="number-label" class="col"><input id="number" type="number" name="quantity" min="8" max="150" placeholder="age"></div>
+            </div>
+
+            <div class="row">
+                    <div class="col left"><label for="role">Which role best describes you:</label></div>
+                    <div class="col">
+                        <select id="dropdown" name="role">
+                            <option disabled value>Select a role</option>
+                            <option selected="selected" value="1">Student</option>
+                            <option value="2">Full Time Job</option>
+                            <option value="3">Part Time Job</option>
+                            <option value="4">Hobbyist</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="col left"><label for="favorite">What do you like most on Borscht.net:</label></div>
+                    <div class="col">
+                        <select id="dropdown" name="favorite">
+                            <option disabled value>Select an option</option>
+                            <option selected="selected" value="1">Recipes</option>
+                            <option value="2">Videos</option>
+                            <option value="3">Restaurant Reviews</option>
+                            <option value="4">Blog</option>
+                            <option value="5">The advertisements of course!</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col left"><label for="recommend">Would you recommend Borscht.net to your friends?:</label></div>
+                <div class="col">
+                        <ul>
+                            <li>
+                                <input id="yes" type="radio" name="userRating" value="yes">
+                                <label for="yes">Yes</label>
+                                
+                            </li>
+                            <li>
+                                    <input id="maybe" type="radio" name="userRating" value="maybe">    
+                                    <label for="maybe">Probably</label>
+                            </li>
+                            <li>
+                                <input id="no" type="radio" name="userRating" value="no">
+                                <label id="no">No</label>
+                            </li>
+                        </ul>        
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col left"><label>What are your favorite Borscht ingredients?:</label></div>
+                    <div class="col">
+                            <ul>
+                                <li>
+                                    <input id="beet" type="checkbox" name="ingredient" value="beets">
+                                    <label for="beet">Beets</label>
+                                </li>
+                                <li>
+                                    <input id="car" type="checkbox" name="ingredient" value="carrots">
+                                    <label for="car">Carrots</label>
+                                </li>
+                                <li>
+                                    <input id="po" type="checkbox" name="ingredient" value="potatoes"> 
+                                    <label id="po">Potatoes</label>
+
+                                </li>
+                                <li>
+                                    <input id="cab" type="checkbox" name="ingredient" value="cabbage"> 
+                                    <label id="cab">Cabbage</label>   
+                                </li>
+                                <li>
+                                    <input id="tom" type="checkbox" name="ingredient" value="tomatoes">
+                                    <label id="tom">Tomatoes</label>
+                                </li>
+                                <li>
+                                    <input id=gar type="checkbox" name="ingredient" value="garlic">
+                                    <label id="gar">Garlic</label>
+                                </li>
+                                <li>
+                                    <input id="sc" type="checkbox" name="ingredient" value="sour-cream">
+                                    <label id="sc">Sour Cream</label>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col left"><label for="comments">Any comments or suggestions?</label></div>
+                    <div class="col">
+                        <textarea class="form-control" id="comments" name="user-comments" rows="3"></textarea>
+                    </div>
+                </div>
+
+
+
+            
+            <div class="row centeredButton"><button id="submit" type="submit" class="btn btn-primary">Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>

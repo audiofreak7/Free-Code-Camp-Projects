@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* margin-top: 15px; */
+    padding-top: 15px;
+}
+
+blockquote {
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.quote {
+    font-family: 'Merienda', cursive;
+    font-size: 1.2em;
+}
+
+.signature {
+    font-family: 'Marck Script', cursive; 
+    font-size: 1.8em;
+}
+
+.sigSpacing {
+    margin: 30px auto;
+}
+
+.textCentered {
+    text-align: center;
+    padding-bottom: 15px;
+}
